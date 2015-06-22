@@ -1,0 +1,10 @@
+<a href='#'>Log In with Github</a>
+<script>
+  var a = document.querySelector("a")
+  a.addEventListener("click", function(){
+    window.open("http://auth.wdidc.org")
+  })
+  window.addEventListener("message", function(event){
+    alert("Access Token: "+event.data)
+  })
+</script>
